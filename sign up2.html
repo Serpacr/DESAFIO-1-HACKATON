@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		/* Add some basic styling to make the form look nicer */
+		form {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input, textarea {
+			width: 100%;
+			padding: 6px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+        
+	</style>
+</head>
+<body>
+	<h1></h1>
+    <form>
+        <img>
+    <div class="container" style="text-align: center;">
+      <img src="logomarca.png.png"
+      width="200";
+      min-width="200";
+      
+    </div>
+    </form>
+<form id="sign-up-form">
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <!-- index.html -->
+<a href="transactions.html"></a>
+<!-- index.html -->
+<button id="signInButton">Sign In</button>
+
+<script>
+  document.getElementById("signInButton").addEventListener("click", function() {
+    window.location.href = "transactions.html";
+  });
+</script>
+    
+  </form>
+  
+  <!-- JavaScript for Sign Up Form -->
+  <script>
+    const signUpForm = document.getElementById('sign-up-form');
+  
+    signUpForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const cpf = document.getElementById('cpf').value;
+      const password = document.getElementById('password').value;
+  
+      // TO DO: Implement sign up logic here
+      console.log(`Sign up attempt: CPF=${cpf}, Password=${password}`);
+    });
+  </script>
+</body>
+</html>
