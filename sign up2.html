@@ -28,23 +28,13 @@
 			margin-bottom: 20px;
 			border: 1px solid #ccc;
 		}
-		button[type="submit"] {
-			background-color: #4CAF50;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 10px;
-			cursor: pointer;
-		}
-		button[type="submit"]:hover {
-			background-color: #3e8e41;
-		}
+		
         
 	</style>
 </head>
-<body>
+<body style="background-color: rgba(0, 0, 0, 0.277);"
 	<h1></h1>
-    <form>
+    <form style="background-color: white;"
         <img>
     <div class="container" style="text-align: center;">
       <img src="logomarca.png.png"
@@ -82,6 +72,11 @@
       const password = document.getElementById('password').value;
   
       // TO DO: Implement sign up logic here
+      console.log(`Sign up attempt: CPF=${cpf}, Password=${password}`);
+    });
+  </script>
+</body>
+</html>
       console.log(`Sign up attempt: CPF=${cpf}, Password=${password}`);
     });
   </script>
